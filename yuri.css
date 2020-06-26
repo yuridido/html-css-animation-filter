@@ -92,3 +92,49 @@
     90% {transform: rotate(270deg);}
     100% {transform: rotate(0);}
 }
+
+.ex-12-top-white {
+    animation: sposta-il-sopra 3s linear infinite;
+}
+
+.ex-12-bottom-white {
+    animation: sposta-il-sotto 3s linear infinite;
+}
+
+@keyframes sposta-il-sopra {
+    0% {left: 10%;}
+    50% {left: calc(90% - 60px);}
+    100% {left: 10%;}
+}
+
+@keyframes sposta-il-sotto {
+    0% {right: 10%;}
+    50% {right: calc(90% - 60px);}
+    100% {right: 10%;}
+}
+
+.ex-13-top-white {
+    animation: ruota-il-sopra 7s linear infinite;
+}
+
+.ex-13-bottom-white {
+    animation: ruota-il-sotto 7s linear infinite;
+}
+
+@keyframes ruota-il-sopra {
+    0% {left: 10%; top: -10px;}
+   30% {left: calc(100% - 30px); top: -10px;}
+   45% {left: calc(100% - 30px); top: 100%;}
+   75% {left: 0; top: 100%;}
+   90% {left: -15px; top: -10px;}
+   100% {left: 10%; top: -10px;}
+}
+
+@keyframes ruota-il-sotto {
+    0% {right: 10%; bottom: -10px;}
+   30% {right: calc(100% - 30px); bottom: -10px;}
+   45% {right: calc(100% - 30px); bottom: 100%;}
+   75% {right: 0; bottom: 100%;}
+   90% {right: -15px; bottom: -10px;}
+   100% {right: 10%; bottom: -10px;}
+}
